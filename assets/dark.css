@@ -1,0 +1,17 @@
+/*
+ * Dark mode for the Light Dark Toggle.
+ *
+ * The plugin's own html class means "light mode is current", so it can't mark
+ * dark. A small head script in functions.php mirrors the stored choice as
+ * .pressshot-stored-dark / .pressshot-stored-light. With no stored choice the
+ * toggle's data-default-mode decides. No toggle on the page, no dark mode.
+ */
+:root:has(.wp-block-wpcomsp-light-dark-toggle[data-default-mode="light"]).pressshot-stored-dark,
+:root:has(.wp-block-wpcomsp-light-dark-toggle[data-default-mode="dark"]):not(.pressshot-stored-light) {
+	color-scheme: dark;
+	--wp--preset--color--base: #1A2130;
+	--wp--preset--color--contrast: #FAF8F2;
+	--wp--preset--color--accent: #7E9BF0;
+	--wp--preset--color--accent-soft: #3A3424;
+	--wp--preset--color--muted: #A3ABB8;
+}

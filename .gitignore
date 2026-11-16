@@ -1,0 +1,16 @@
+# Release ZIPs are built with git archive, never committed
+*.zip
+node_modules/
+
+# macOS, editor, and local state
+.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*.log
+
+# Agent and tool scratch: build ledgers, review files, local settings
+.superpowers/
+.claude/
+.playwright-mcp/

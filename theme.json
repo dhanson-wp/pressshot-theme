@@ -1,0 +1,114 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "720px",
+			"wideSize": "1200px"
+		},
+		"color": {
+			"defaultPalette": false,
+			"palette": [
+				{
+					"slug": "base",
+					"name": "Paper",
+					"color": "#FAF8F2"
+				},
+				{
+					"slug": "contrast",
+					"name": "Ink",
+					"color": "#222B3A"
+				},
+				{
+					"slug": "accent",
+					"name": "Cobalt",
+					"color": "#3159D8"
+				},
+				{
+					"slug": "accent-soft",
+					"name": "Butter",
+					"color": "#F4E9BB"
+				},
+				{
+					"slug": "muted",
+					"name": "Muted ink",
+					"color": "#636971"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"slug": "heading",
+					"name": "Fraunces",
+					"fontFamily": "Fraunces, Georgia, serif",
+					"fontFace": [
+						{
+							"fontFamily": "Fraunces",
+							"fontWeight": "100 900",
+							"fontStyle": "normal",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/Fraunces[SOFT,WONK,opsz,wght].ttf"
+							]
+						}
+					]
+				},
+				{
+					"slug": "body",
+					"name": "System",
+					"fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Helvetica, Arial, sans-serif"
+				}
+			]
+		},
+		"custom": {
+			"border-radius": "8px"
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--base)",
+			"text": "var(--wp--preset--color--contrast)"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--body)",
+			"fontSize": "1.0625rem",
+			"lineHeight": "1.6"
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--accent)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--heading)",
+					"fontWeight": "700",
+					"letterSpacing": "-0.025em"
+				},
+				"css": "font-variation-settings: \"opsz\" 72, \"SOFT\" 60, \"WONK\" 0;"
+			},
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--accent)",
+					"text": "var(--wp--preset--color--base)"
+				},
+				"border": {
+					"radius": "var(--wp--custom--border-radius)"
+				}
+			}
+		},
+		"blocks": {
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--heading)",
+					"fontWeight": "700",
+					"letterSpacing": "-0.025em"
+				},
+				"css": "font-variation-settings: \"opsz\" 72, \"SOFT\" 60, \"WONK\" 0;"
+			}
+		}
+	}
+}

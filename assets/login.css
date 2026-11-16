@@ -1,0 +1,63 @@
+body.login {
+	background: #FAF8F2;
+	color: #222B3A;
+}
+
+.login #login h1 a {
+	background-image: url("mark-ink.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 84px;
+	height: 84px;
+}
+
+.login form {
+	background: #fff;
+	border: 1px solid rgba(34, 43, 58, 0.14);
+	border-radius: 8px;
+	box-shadow: none;
+}
+
+.login label,
+.login .message,
+.login #nav a,
+.login #backtoblog a,
+.login .privacy-policy-page-link a {
+	color: #222B3A;
+}
+
+.login #nav a:hover,
+.login #backtoblog a:hover,
+.login a:focus {
+	color: #3159D8;
+}
+
+.login form input[type="text"],
+.login form input[type="password"],
+.login form input[type="email"] {
+	border-radius: 6px;
+}
+
+.login .button-primary,
+.login .button-primary:focus {
+	background: #3159D8;
+	border-color: #3159D8;
+	color: #fff;
+	border-radius: 6px;
+	box-shadow: none;
+	text-shadow: none;
+}
+
+.login .button-primary:hover {
+	background: #2749B8;
+	border-color: #2749B8;
+}
+
+.login .button-primary:focus-visible,
+.login form input:focus {
+	outline: 2px solid #3159D8;
+	outline-offset: 1px;
+	border-color: #3159D8;
+	box-shadow: none;
+}
